@@ -8,7 +8,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-      @price = price
+      @price = price.to_f
       @total += (quantity * @price.to_f)
       counter = 0
       while counter < quantity
