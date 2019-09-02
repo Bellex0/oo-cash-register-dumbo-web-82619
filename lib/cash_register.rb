@@ -31,6 +31,7 @@ class CashRegister
     @total -= @price
     if @items = 0
       @total = 0.to_f
+    end
   end
     
   
