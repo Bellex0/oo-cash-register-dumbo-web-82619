@@ -31,6 +31,7 @@ class CashRegister
     if @items = 0
       @total = 0.to_f
     else 
+      @items.pop
        @total -= @price
     end
   end
